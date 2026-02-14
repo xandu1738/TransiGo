@@ -2,6 +2,7 @@
   "expo": {
     "name": "TransiGo",
     "slug": "TransiGo",
+    "scheme": "transigo",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -24,6 +25,17 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ],
+      "expo-router"
+    ]
   }
 }
